@@ -17,6 +17,8 @@ ADD cron_jobs.txt /var/spool/cron/crontabs/root
 
 RUN apt-get update && \
 apt-get install -y cron && \
+apt-get install -y vim && \
+apt-get install -y telnet && \
 touch /code/jobs.log && \
 chmod +x /code/entrypoint.sh && \
 chmod 0600 /var/spool/cron/crontabs/root && \
