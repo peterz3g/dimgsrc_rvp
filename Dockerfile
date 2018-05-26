@@ -31,6 +31,7 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
 service cron restart && \
 echo "#add by zhangyang32"  >> /etc/profile && \
+echo "export LANG=C.UTF-8"  >> /etc/profile && \
 ls
 
 
